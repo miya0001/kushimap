@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+- '7.6'
+
+before_script:
+- npm install
+
+script:
+- npm test
+
+after_success: bash ./bin/deploy.sh
+
+env:
+  global:
+  - GIT_USER: Travis CI
+  - GIT_EMAIL: miya0001@users.noreply.github.com
+  - GH_REF: github.com/miya0001/kushimap
+  - secure: "aZWIVUnsbW+1QPkoYMAPj5fkENBADIm21Od2C/QK2wmu3pa4Ht8McPGY3Xb4C16jYspVThprDKnEJEk2IR9O5IG7g+JZIdZhyBz8/oZeIigFtJpttDOTH6LNKfPMnoWxPRlR3fwD+cM93C/8ppDMf8yYqb8akxp1M3RFC5VHMuysqfPdBaFnWVnqZU8PProlFwR1u8nmqCjw5dGrSjlKQkHkkGQuGX4zzjvr3UuW0kZKgFHeGUu1lDfBsLesX1dV3a6Eol4dwtC9fSovzuBauVc+Phw17PvNY8F2ZzPChQNqeuMN1g/Btsn8dJdApT2hJiTWQhL0cw3QCjZG5xrd4hmSrwm/mTgxDmyPFwUqm/CZv0D3q4SNVSnbDfB0/UrsURCjF2O2X92dr3IbxyYhKE5rk4tqmDEAxsKeL9I5lpvehBnySQrQ54Tb3JWSyTk+DRl+mRcEC+Oz2OnLFIlSI1FTnFdsSn9UTRv8qwvDZmDficOjgZxz6LnTl0Q0wNZxUQ936uz1DRAo1pO2e4JMctC4BXHXZ9tgAZIsktF9T7xs2H+n+g7hwQXxwLBVcv7yCmtkzGaklNCVr34Hk7mnJeOlevx1OG5SslNJB/LK2zvRqI8AkzzOjAvrolpPfnykQJ8jTxN0uZ/UNUYrHBk/7bSK8fV5Sm1jSWA/QqDepxQ="

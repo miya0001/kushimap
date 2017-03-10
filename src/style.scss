@@ -4,3 +4,24 @@
 @import './scss/app.scss';
 @import './scss/menu.scss';
 @import './scss/panel.scss';
+
+#panel .home-contents
+{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+#panel .home-contents img
+{
+  display: block;
+  max-width: 60%;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
