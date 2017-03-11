@@ -23,7 +23,6 @@
     if ( opts.data ) {
       this.data = opts.data
     }
-    console.log( opts.data )
 
     this.click = function( e ) {
       route( 'map/' + e.target.dataset.lat.trim() + ',' + e.target.dataset.lng.trim() )
