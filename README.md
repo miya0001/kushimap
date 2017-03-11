@@ -1,3 +1,3 @@
 ![](./img/logo.png)
 
-# Kushimoto, Wakayama
+# Public Faciliies in Kushimoto, Wakayama Japan
