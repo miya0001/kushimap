@@ -7,7 +7,7 @@
         <div class="item-toggle" show={ lat && lng }><i class="show-map glyphicon glyphicon-map-marker" onclick={ parent.click } data-lat="{ lat }" data-lng={ lng }></i></div>
       </header>
       <p class="item-description">{ content }<br>
-      <span show={ tel }><i class="glyphicon glyphicon-phone-alt"></i> <a hredf="tel:{ tel }">{ tel }</a></span></p>
+      <span show={ tel }><i class="glyphicon glyphicon-phone-alt"></i> <a href="tel:{ tel }">{ tel }</a></span></p>
 
       <ul>
         <li show={ business_hours }>営業時間: { business_hours }</li>
