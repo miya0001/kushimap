@@ -83,6 +83,7 @@ route( function( page, id ) {
 
   // to ignore scroll when map is showing
   document.body.classList.remove( 'fixed' )
+  document.body.classList.remove( 'home' )
   document.querySelector( '#panel' ).style.height = 'auto'
 
   const event = new CustomEvent( 'router-' + page, { 'detail': {
@@ -106,6 +107,7 @@ const router = function( page, callback ) {
 }
 
 router( 'home', function( div ) {
+  document.body.classList.add( 'home' )
   riot.mount( div, home_contents )
 } )
 
