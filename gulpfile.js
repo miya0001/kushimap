@@ -16,7 +16,7 @@ const rename      = require( 'gulp-rename' )
 const rimraf      = require( 'rimraf' )
 
 gulp.task( 'md', () => {
-  gulp.src( 'README.md' )
+  gulp.src( 'home.md' )
     .pipe( marked( {} ) )
     // eslint-disable-next-line quotes
     .pipe( replace( /^/, '<home-contents class="home-contents">' + "\n" + '<div class="wrap">' ) )
