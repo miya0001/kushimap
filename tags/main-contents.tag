@@ -15,7 +15,6 @@
         <li show={ parking }>駐車場: { parking }</li>
         <li show={ toilet }>トイレ: { toilet }</li>
       </ul>
-      <p></p>
     </div>
   </section>
 
