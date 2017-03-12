@@ -17,9 +17,44 @@
 
       map.setView( new L.LatLng( lat, lng ), 14 )
 
-      L.tileLayer( 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      const osm = L.tileLayer( 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-      } ).addTo( map )
+      } )
+
+      const gsi = L.tileLayer( 'http://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/{z}/{x}/{y}.jpg', {
+        attribution: '<a href="http://maps.gsi.go.jp/development/ichiran.html" target="_blank">gsi.go.jp</a>'
+      } )
+
+      const gsi4 = L.tileLayer( 'http://cyberjapandata.gsi.go.jp/xyz/gazo4/{z}/{x}/{y}.jpg', {
+        attribution: '<a href="http://maps.gsi.go.jp/development/ichiran.html" target="_blank">gsi.go.jp</a>'
+      } )
+
+      const gsi3 = L.tileLayer( 'http://cyberjapandata.gsi.go.jp/xyz/gazo3/{z}/{x}/{y}.jpg', {
+        attribution: '<a href="http://maps.gsi.go.jp/development/ichiran.html" target="_blank">gsi.go.jp</a>'
+      } )
+
+      const gsi2 = L.tileLayer( 'http://cyberjapandata.gsi.go.jp/xyz/gazo2/{z}/{x}/{y}.jpg', {
+        attribution: '<a href="http://maps.gsi.go.jp/development/ichiran.html" target="_blank">gsi.go.jp</a>'
+      } )
+
+      const gsi1 = L.tileLayer( 'http://cyberjapandata.gsi.go.jp/xyz/gazo1/{z}/{x}/{y}.jpg', {
+        attribution: '<a href="http://maps.gsi.go.jp/development/ichiran.html" target="_blank">gsi.go.jp</a>'
+      } )
+
+      const gsi_old = L.tileLayer( 'http://cyberjapandata.gsi.go.jp/xyz/ort_old10/{z}/{x}/{y}.png', {
+        attribution: '<a href="http://maps.gsi.go.jp/development/ichiran.html" target="_blank">gsi.go.jp</a>'
+      } )
+
+      osm.addTo( map )
+
+      const baseMaps = {
+        'OSM japan': osm,
+        '現在': gsi,
+        '1974-1978年': gsi1,
+        '1961-1964年': gsi_old
+      }
+
+      L.control.layers( baseMaps, null, { position: 'bottomleft' } ).addTo( map )
 
       L.marker( [ lat, lng ] ).addTo( map ).on( 'click', function() {
         location.href='http://maps.apple.com/?q='+lat+','+lng
