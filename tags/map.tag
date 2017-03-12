@@ -25,17 +25,17 @@
         attribution: '<a href="http://maps.gsi.go.jp/development/ichiran.html" target="_blank">gsi.go.jp</a>'
       } )
 
-      const gsi4 = L.tileLayer( 'http://cyberjapandata.gsi.go.jp/xyz/gazo4/{z}/{x}/{y}.jpg', {
-        attribution: '<a href="http://maps.gsi.go.jp/development/ichiran.html" target="_blank">gsi.go.jp</a>'
-      } )
-
-      const gsi3 = L.tileLayer( 'http://cyberjapandata.gsi.go.jp/xyz/gazo3/{z}/{x}/{y}.jpg', {
-        attribution: '<a href="http://maps.gsi.go.jp/development/ichiran.html" target="_blank">gsi.go.jp</a>'
-      } )
-
-      const gsi2 = L.tileLayer( 'http://cyberjapandata.gsi.go.jp/xyz/gazo2/{z}/{x}/{y}.jpg', {
-        attribution: '<a href="http://maps.gsi.go.jp/development/ichiran.html" target="_blank">gsi.go.jp</a>'
-      } )
+      // const gsi4 = L.tileLayer( 'http://cyberjapandata.gsi.go.jp/xyz/gazo4/{z}/{x}/{y}.jpg', {
+      //   attribution: '<a href="http://maps.gsi.go.jp/development/ichiran.html" target="_blank">gsi.go.jp</a>'
+      // } )
+      //
+      // const gsi3 = L.tileLayer( 'http://cyberjapandata.gsi.go.jp/xyz/gazo3/{z}/{x}/{y}.jpg', {
+      //   attribution: '<a href="http://maps.gsi.go.jp/development/ichiran.html" target="_blank">gsi.go.jp</a>'
+      // } )
+      //
+      // const gsi2 = L.tileLayer( 'http://cyberjapandata.gsi.go.jp/xyz/gazo2/{z}/{x}/{y}.jpg', {
+      //   attribution: '<a href="http://maps.gsi.go.jp/development/ichiran.html" target="_blank">gsi.go.jp</a>'
+      // } )
 
       const gsi1 = L.tileLayer( 'http://cyberjapandata.gsi.go.jp/xyz/gazo1/{z}/{x}/{y}.jpg', {
         attribution: '<a href="http://maps.gsi.go.jp/development/ichiran.html" target="_blank">gsi.go.jp</a>'
