@@ -1,7 +1,7 @@
 {
-  "title": "Wmap",
-  "description": "An open source mobile application framework which displays open data.",
-  "url": "https://wmap.wacker.io/",
+  "title": "Kushimoto Map",
+  "description": "Public Facilities in Kushimoto, Wakayama",
+  "url": "http://kushimap.wacker.io",
   "locale": "ja_JP",
   "endpoint": "json",
   "map": {
@@ -16,6 +16,12 @@
       {
         "name": "空中写真",
         "tile": "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/{z}/{x}/{y}.jpg",
+        "attribution": "GSI Japan",
+        "attribution_url": "http://maps.gsi.go.jp/development/ichiran.html"
+      },
+      {
+        "name": "空中写真(1961-1964年)",
+        "tile": "http://cyberjapandata.gsi.go.jp/xyz/ort_old10/{z}/{x}/{y}.png",
         "attribution": "GSI Japan",
         "attribution_url": "http://maps.gsi.go.jp/development/ichiran.html"
       }
