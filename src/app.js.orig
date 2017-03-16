@@ -84,6 +84,7 @@ route( function( page, id ) {
 
   // to ignore scroll when map is showing
   document.body.classList.remove( 'fixed' )
+  document.body.classList.remove( 'home' )
   document.querySelector( '#panel' ).style.height = 'auto'
 
   riot.mount( content_block, error, {
@@ -109,12 +110,18 @@ const router = function( page, callback ) {
   }, false )
 }
 
+<<<<<<< HEAD
+router( 'home', function( div ) {
+  document.body.classList.add( 'home' )
+  riot.mount( div, home_contents )
+=======
 const mount = function( tag, opts ) {
   riot.mount( content_block, tag, opts )
 }
 
 router( 'home', function() {
   mount( home_contents )
+>>>>>>> upstream/master
 } )
 
 router( 'data', function( id ) {

@@ -5,12 +5,17 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/leaflet.css" />
     <link rel="stylesheet" href="css/style.css">
+<<<<<<< HEAD:index.html
     <title>Public Facilites in Kushimoto</title>
+=======
+    <title><%= title %></title>
+>>>>>>> upstream/master:index.html.ejs
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
+<<<<<<< HEAD:index.html
     <link rel="apple-touch-icon" href="./img/logo.png" />
     <link rel="icon" href="./img/icon.png">
     <meta name="msapplication-TileImage" content="./img/logo.png" />
@@ -22,6 +27,19 @@
     <meta property="og:site_name" content="Public Facilites in Kushimoto" />
     <meta property="og:image" content="http://kushimap.wacker.io/img/ogp.png" />
     <meta property="og:locale" content="ja_JP" />
+=======
+    <link rel="apple-touch-icon" href="./img/icon.png" />
+    <link rel="icon" href="./img/icon.png">
+    <meta name="msapplication-TileImage" content="./img/icon.png" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="<%= title %>" />
+    <meta property="og:description" content="<%= description %>" />
+    <meta property="og:url" content="<%= url %>" />
+    <meta property="og:site_name" content="<%= title %>" />
+    <meta property="og:image" content="./img/ogp.png" />
+    <meta property="og:locale" content="<%= locale %>" />
+>>>>>>> upstream/master:index.html.ejs
   </head>
   <body>
     <header class="fixed-header">
