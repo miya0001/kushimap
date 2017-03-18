@@ -4,7 +4,7 @@
   "url": "https://wmap.wacker.io",
   "locale": "ja_JP",
   "endpoint": "json",
-  "home": "README.md",
+  "home": "home.md",
   "map": {
     "zoom": 14,
     "layers": [
