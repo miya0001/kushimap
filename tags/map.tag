@@ -81,5 +81,22 @@
       }, Math.floor( 1000 / 60 * 10 ) )
     } )
 
+    const pointer = L.circle( [ 0, 0 ], { radius: 5 } ).addTo( map );
+
+    const getpos = () => {
+      navigator.geolocation.watchPosition( ( pos ) => {
+        const lat = pos.coords.latitude;
+        const lng = pos.coords.longitude;
+        pointer.setLatLng( [ lat, lng ] )
+      }, ( e ) => {
+
+      }, {
+        enableHighAccuracy: false,
+        timeout: 2000,
+        maximumAge: 0
+      } );
+    }
+
+    getpos();
   </script>
 </map>
