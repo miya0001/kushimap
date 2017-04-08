@@ -1,0 +1,31 @@
+{
+  "title": "Kushimoto Map",
+  "description": "Public Facilities in Kushimoto, Wakayama",
+  "url": "http://kushimap.wacker.io",
+  "locale": "ja_JP",
+  "endpoint": "json",
+  "home": "home.md",
+  "map": {
+    "zoom": 14,
+    "layers": [
+      {
+        "name": "Open Street Map",
+        "tile": "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+        "attribution": "OpenStreetMap Contributers",
+        "attribution_url": "http://osm.org/copyright"
+      },
+      {
+        "name": "空中写真",
+        "tile": "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/{z}/{x}/{y}.jpg",
+        "attribution": "GSI Japan",
+        "attribution_url": "http://maps.gsi.go.jp/development/ichiran.html"
+      },
+      {
+        "name": "空中写真(1961-1964年)",
+        "tile": "http://cyberjapandata.gsi.go.jp/xyz/ort_old10/{z}/{x}/{y}.png",
+        "attribution": "GSI Japan",
+        "attribution_url": "http://maps.gsi.go.jp/development/ichiran.html"
+      }
+    ]
+  }
+}
